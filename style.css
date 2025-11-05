@@ -1,0 +1,79 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+/* Global reset & typography */
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #222;
+            background: linear-gradient(135deg, #f0f4ff, #e6e9ff);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        header {
+            background: rgba(255,255,255,0.9);
+            padding: 1.5rem 2rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,.08);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        header h1 { font-size: 2rem; font-weight: 600; }
+
+        main { flex: 1; max-width: 960px; margin: 2rem auto; width: 90%; }
+
+        section { margin-bottom: 3rem; }
+
+        .intro {
+            text-align: center;
+            padding: 2rem 0;
+        }
+        .intro h2 { font-size: 2.2rem; margin-bottom: .5rem; }
+        .intro p { font-size: 1.1rem; color: #555; }
+
+        .projects {
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        }
+        .project-card {
+            background: #fff;
+            border-radius: 8px;
+            padding: 1.2rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,.07);
+            transition: transform .2s;
+        }
+        .project-card:hover { transform: translateY(-4px); }
+        .project-card h3 { margin-top: .5rem; font-size: 1.3rem; }
+        .project-card p { margin: .6rem 0; color: #444; }
+        .project-card a { font-size: .9rem; }
+
+        .skills ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: .8rem;
+            justify-content: center;
+        }
+        .skills li {
+            background: #0066cc;
+            color: #fff;
+            padding: .4rem .8rem;
+            border-radius: 4px;
+            font-size: .9rem;
+        }
+
+        footer {
+            background: rgba(255,255,255,0.9);
+            text-align: center;
+            padding: 1rem;
+            font-size: .9rem;
+            border-top: 1px solid #ddd;
+        }
+        
